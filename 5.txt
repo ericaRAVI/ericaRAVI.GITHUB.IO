@@ -1,0 +1,27 @@
+Erica Engineering Works - Static website package
+
+Files included:
+- index.html (home)
+- about.html
+- services.html
+- contact.html
+- styles.css
+- CNAME (contains ericaengineering.in)
+- README.txt (this file)
+
+How to publish on GitHub Pages:
+1) Create a repository named exactly: <your-github-username>.github.io
+2) Upload these files to the repository root (via git or GitHub web upload).
+3) Ensure CNAME is present in repository root; GitHub Pages will use it as custom domain.
+4) In GoDaddy DNS, set the A records for the apex domain to GitHub Pages IPs:
+   185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
+   And set CNAME for 'www' to: <your-github-username>.github.io
+5) Wait for DNS propagation, then enable 'Enforce HTTPS' in GitHub Pages settings.
+
+Contact form:
+- The contact form uses a placeholder Formspree action. Sign up at https://formspree.io to receive submissions by email, then replace the form action URL in contact.html.
+
+If you want, I can:
+- Fill in your GitHub username and give exact git commands.
+- Create a simple logo (PNG + SVG) and add it to the site.
+- Provide step-by-step screenshots for GoDaddy DNS changes.
