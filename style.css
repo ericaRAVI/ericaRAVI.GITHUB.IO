@@ -1,1 +1,40 @@
-body{font-family:Arial, sans-serif;}
+body{font-family:Arial, sans-serif;}.case-card {
+  background: #ffffff;
+  border: 1px solid #e5eef8;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 25px 0;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.lead {
+  font-size: 16px;
+  color: #445;
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background: #0b6cff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.download-btn:hover {
+  background: #084ecb;
+}
+
+@media (max-width: 768px) {
+  .case-grid {
+    grid-template-columns: 1fr;
+  }
+}
